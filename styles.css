@@ -8,81 +8,48 @@
 body {
     font-family: 'Arial', sans-serif;
     height: 100vh;
-    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    background-color: #e0e0e0;  /* Soft gray background */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    animation: gradientAnimation 5s ease infinite;
+    color: #333; /* Darker text for better readability */
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
-    animation: fadeIn 1.5s ease-in-out;
+    color: #444; /* Slightly darker text */
 }
 
 .container {
     text-align: center;
-    animation: slideIn 1s ease-out;
+    padding: 20px;
+    background-color: #fff; /* White background for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .download-button {
     font-size: 1.2rem;
-    background-color: #ff5733;
+    background-color: #555; /* Dark gray for the button */
     color: white;
     text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 10px;
-    border: 2px solid #ff5733;
-    transition: background-color 0.3s, transform 0.3s;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
     display: inline-block;
     margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Hover effects */
+/* Button Hover */
 .download-button:hover {
-    background-color: #c14d29;
-    transform: scale(1.1);
-    cursor: pointer;
+    background-color: #333; /* Darker gray on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
 }
 
+/* Button Active (when clicked) */
 .download-button:active {
-    transform: scale(1.05);
-}
-
-/* Keyframes for animations */
-@keyframes gradientAnimation {
-    0% {
-        background: linear-gradient(135deg, #ff6a00, #ee0979);
-    }
-    50% {
-        background: linear-gradient(135deg, #ff8a00, #ff4060);
-    }
-    100% {
-        background: linear-gradient(135deg, #ff6a00, #ee0979);
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    transform: translateY(0); /* Button back to original state when clicked */
 }

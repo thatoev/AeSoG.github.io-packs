@@ -1,0 +1,88 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+.download-button {
+    font-size: 1.2rem;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid #ff5733;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Hover effects */
+.download-button:hover {
+    background-color: #c14d29;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.download-button:active {
+    transform: scale(1.05);
+}
+
+/* Keyframes for animations */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #ff6a00, #ee0979);
+    }
+    50% {
+        background: linear-gradient(135deg, #ff8a00, #ff4060);
+    }
+    100% {
+        background: linear-gradient(135deg, #ff6a00, #ee0979);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -37,7 +37,7 @@ body {
 
 /* Title Styling */
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Slightly smaller size for the title */
     margin-bottom: 15px;
     color: #f5b400;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -48,7 +48,7 @@ h1 {
 
 /* Paragraph Styling */
 p {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Slightly smaller paragraph font size */
     color: #ccc;
     margin-bottom: 20px;
     text-align: center;
@@ -56,12 +56,12 @@ p {
 
 /* Download Button Styling */
 .download-button {
-    font-size: 1.2rem; /* Reduced size */
+    font-size: 1rem; /* Reduced font size */
     background: linear-gradient(180deg, #ffd34e, #f5a623);
     color: white;
     text-decoration: none;
-    padding: 12px 40px; /* Adjusted padding for smaller size */
-    border-radius: 15px;
+    padding: 10px 25px; /* Reduced padding */
+    border-radius: 12px; /* Slightly reduced border-radius */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -72,14 +72,14 @@ p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: relative;
-    margin-top: 20px; /* Space above the button */
-    gap: 6px; /* Reduced space between words */
+    margin-top: 20px;
+    gap: 4px; /* Smaller gap between 'Download' and 'Now' */
 }
 
 /* Hover Effects */
 .download-button:hover {
     background: linear-gradient(180deg, #ffbf00, #ff9500);
-    transform: scale(1.05); /* Reduced scale on hover */
+    transform: scale(1.05); /* Slight scaling effect */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -90,17 +90,17 @@ p {
 /* Icon inside Button */
 .download-button::before {
     content: '\26A1'; /* Lightning bolt emoji */
-    font-size: 1.3rem; /* Reduced icon size */
-    margin-right: 8px; /* Reduced space for the icon */
+    font-size: 1rem; /* Reduced size */
+    margin-right: 6px; /* Reduced space for the icon */
     position: relative;
     top: 1px;
 }
 
 /* Styling for the "Now" Text */
 .now-text {
-    font-size: 1.2rem; /* Same size as the main button text */
+    font-size: 1rem; /* Same size as the main button text */
     font-weight: bold;
     color: #f5b400;
     text-transform: uppercase;
-    margin-left: 6px; /* Adjusted space */
+    margin-left: 4px; /* Reduced space between 'Download' and 'Now' */
 }

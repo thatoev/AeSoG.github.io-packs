@@ -84,7 +84,7 @@ p {
 }
 
 .download-button:active {
-    transform: scale(0.95);
+    transform: scale(0.65);
 }
 
 /* Icon inside Button */
@@ -98,7 +98,7 @@ p {
 
 /* Styling for the "Now" Text */
 .now-text {
-    font-size: 1rem; /* Same size as the main button text */
+    font-size: 0.5rem; /* Same size as the main button text */
     font-weight: bold;
     color: #f5b400;
     text-transform: uppercase;

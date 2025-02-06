@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Global Styles */
 * {
     margin: 0;
@@ -20,44 +18,7 @@ body {
     position: relative;
 }
 
-/* Animated Background Muster */
-body::before, body::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 150%;
-    height: 150%;
-    background: radial-gradient(circle at center, rgba(255, 200, 0, 0.1), rgba(255, 140, 0, 0.05), transparent);
-    animation: backgroundMove 10s infinite linear alternate;
-    pointer-events: none;
-    transform: translate(-50%, -50%) rotate(0deg);
-    opacity: 0.5;
-}
-
-body::after {
-    animation: backgroundMoveReverse 12s infinite linear alternate;
-    opacity: 0.3;
-}
-
-@keyframes backgroundMove {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg) scale(1.1);
-    }
-}
-
-@keyframes backgroundMoveReverse {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(-360deg) scale(1.05);
-    }
-}
-
+/* Container for Content */
 .container {
     text-align: center;
     background: #222;
@@ -71,39 +32,39 @@ body::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Align text to the left */
-    gap: 20px;  /* Adds spacing between elements */
+    align-items: center; /* Align everything to the center */
 }
 
+/* Title Styling */
 h1 {
-    font-size: 2.5rem; /* Increased size */
+    font-size: 2.5rem;
     margin-bottom: 15px;
     color: #f5b400;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    font-weight: 700; /* Ensures bold */
-    letter-spacing: 2px; /* Adds spacing between letters */
-    text-align: left; /* Align h1 text to the left */
-    margin-left: 20px; /* Add space from the left */
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
+/* Paragraph Styling */
 p {
-    font-size: 1.2rem; /* Slightly larger text for better readability */
+    font-size: 1.2rem;
     color: #ccc;
     margin-bottom: 20px;
-    text-align: left; /* Align paragraph text to the left */
-    margin-left: 20px; /* Add space from the left */
+    text-align: center;
 }
 
+/* Download Button Styling */
 .download-button {
-    font-size: 1.5rem; /* Larger text size for the button */
+    font-size: 1.5rem;
     background: linear-gradient(180deg, #ffd34e, #f5a623);
     color: white;
     text-decoration: none;
     padding: 15px 50px;
     border-radius: 15px;
-    display: inline-flex; /* Inline-flex for proper alignment */
-    align-items: center; /* Vertically centers the content */
-    justify-content: center; /* Horizontally centers the content */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: 4px solid #7a4f1e;
     transition: background 0.3s, transform 0.2s;
     font-weight: bold;
@@ -111,11 +72,11 @@ p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: relative;
-    width: auto;
-    margin-top: 0;
-    margin-left: 20px; /* Align button to the left */
+    margin-top: 20px; /* Space above the button */
+    gap: 8px; /* Space between the two words */
 }
 
+/* Hover Effects */
 .download-button:hover {
     background: linear-gradient(180deg, #ffbf00, #ff9500);
     transform: scale(1.1);
@@ -126,6 +87,7 @@ p {
     transform: scale(0.95);
 }
 
+/* Icon inside Button */
 .download-button::before {
     content: '\26A1'; /* Lightning bolt emoji */
     font-size: 1.5rem;
@@ -134,13 +96,11 @@ p {
     top: 1px;
 }
 
-/* New styling for the 'Now' text */
+/* Styling for the "Now" Text */
 .now-text {
-    font-size: 1.2rem;
-    color: #f5b400; /* Same color as 'Download' button */
+    font-size: 1.5rem; /* Same size as the main button text */
     font-weight: bold;
+    color: #f5b400;
     text-transform: uppercase;
-    text-align: left; /* Align 'Now' text to the left */
-    margin-left: 20px; /* Align 'Now' text to the left with padding */
-    margin-top: 10px;
+    margin-left: 8px; /* Space between 'Download' and 'Now' */
 }

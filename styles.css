@@ -64,7 +64,7 @@ body::after {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
+    max-width: 300px;
     border: 2px solid #444;
     position: relative;
     z-index: 1;

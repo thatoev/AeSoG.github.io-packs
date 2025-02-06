@@ -56,11 +56,11 @@ p {
 
 /* Download Button Styling */
 .download-button {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Reduced size */
     background: linear-gradient(180deg, #ffd34e, #f5a623);
     color: white;
     text-decoration: none;
-    padding: 15px 50px;
+    padding: 12px 40px; /* Adjusted padding for smaller size */
     border-radius: 15px;
     display: inline-flex;
     align-items: center;
@@ -73,13 +73,13 @@ p {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: relative;
     margin-top: 20px; /* Space above the button */
-    gap: 8px; /* Space between the two words */
+    gap: 6px; /* Reduced space between words */
 }
 
 /* Hover Effects */
 .download-button:hover {
     background: linear-gradient(180deg, #ffbf00, #ff9500);
-    transform: scale(1.1);
+    transform: scale(1.05); /* Reduced scale on hover */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -90,17 +90,17 @@ p {
 /* Icon inside Button */
 .download-button::before {
     content: '\26A1'; /* Lightning bolt emoji */
-    font-size: 1.5rem;
-    margin-right: 12px;
+    font-size: 1.3rem; /* Reduced icon size */
+    margin-right: 8px; /* Reduced space for the icon */
     position: relative;
     top: 1px;
 }
 
 /* Styling for the "Now" Text */
 .now-text {
-    font-size: 1.5rem; /* Same size as the main button text */
+    font-size: 1.2rem; /* Same size as the main button text */
     font-weight: bold;
     color: #f5b400;
     text-transform: uppercase;
-    margin-left: 8px; /* Space between 'Download' and 'Now' */
+    margin-left: 6px; /* Adjusted space */
 }

@@ -71,7 +71,8 @@ body::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    align-items: center; /* Centering the content horizontally */
+    height: auto;
 }
 
 h1 {

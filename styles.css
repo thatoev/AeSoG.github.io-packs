@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Applying Poppins font globally */
 }
 
 body {
@@ -77,20 +77,22 @@ body::after {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increased size */
     margin-bottom: 15px;
     color: #f5b400;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 700; /* Ensures bold */
+    letter-spacing: 2px; /* Adds spacing between letters */
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Slightly larger text for better readability */
     color: #ccc;
     margin-bottom: 20px;
 }
 
 .download-button {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Larger text size for the button */
     background: linear-gradient(180deg, #ffd34e, #f5a623);
     color: white;
     text-decoration: none;

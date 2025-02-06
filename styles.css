@@ -71,7 +71,7 @@ body::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centering the content horizontally */
+    align-items: center; /* Center everything inside the container */
     height: auto;
 }
 

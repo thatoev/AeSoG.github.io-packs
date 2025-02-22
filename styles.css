@@ -1,11 +1,9 @@
-/* styles.css */
-
 /* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Applying Poppins font globally */
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -20,7 +18,7 @@ body {
     position: relative;
 }
 
-/* Animated Background Muster */
+/* Background Animation */
 body::before, body::after {
     content: '';
     position: absolute;
@@ -41,23 +39,16 @@ body::after {
 }
 
 @keyframes backgroundMove {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg) scale(1.1);
-    }
+    0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
+    100% { transform: translate(-50%, -50%) rotate(360deg) scale(1.1); }
 }
 
 @keyframes backgroundMoveReverse {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg) scale(1);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(-360deg) scale(1.05);
-    }
+    0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
+    100% { transform: translate(-50%, -50%) rotate(-360deg) scale(1.05); }
 }
 
+/* Container */
 .container {
     text-align: center;
     background: #222;
@@ -72,45 +63,43 @@ body::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
-    gap: 20px;  /* Adds spacing between elements */
+    gap: 20px;
 }
 
 h1 {
-    font-size: 2.5rem; /* Increased size */
-    margin-bottom: 15px;
+    font-size: 2.5rem;
     color: #f5b400;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    font-weight: 700; /* Ensures bold */
-    letter-spacing: 2px; /* Adds spacing between letters */
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 p {
-    font-size: 1.2rem; /* Slightly larger text for better readability */
+    font-size: 1.2rem;
     color: #ccc;
-    margin-bottom: 20px;
 }
 
+/* Download Button Styles */
 .download-button {
-    font-size: 1.5rem; /* Larger text size for the button */
+    font-size: 1.5rem;
     background: linear-gradient(180deg, #ffd34e, #f5a623);
     color: white;
     text-decoration: none;
     padding: 15px 50px;
     border-radius: 15px;
-    display: flex; /* Flex to center content */
-    align-items: center; /* Vertically centers the content */
-    justify-content: center; /* Horizontally centers the content */
     border: 4px solid #7a4f1e;
     transition: background 0.3s, transform 0.2s;
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-    position: relative;
     width: auto;
     margin-top: 0;
-    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
 }
 
 .download-button:hover {
@@ -120,13 +109,25 @@ p {
 }
 
 .download-button:active {
-    transform: scale(0.65);
+    transform: scale(0.9);
 }
 
-.download-button::before {
-    content: '\26A1'; /* Lightning bolt emoji */
-    font-size: 1.5rem;
-    margin-right: 12px;
-    position: relative;
-    top: 1px;
+/* Default Pack Button */
+.download-default {
+    background: linear-gradient(180deg, #4e9eff, #0055ff);
+    border-color: #003f99;
+}
+
+.download-default:hover {
+    background: linear-gradient(180deg, #7bb3ff, #0073ff);
+}
+
+/* X-Ray Pack Button */
+.download-xray {
+    background: linear-gradient(180deg, #ff4e4e, #ff0000);
+    border-color: #990000;
+}
+
+.download-xray:hover {
+    background: linear-gradient(180deg, #ff7b7b, #ff1a1a);
 }
